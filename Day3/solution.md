@@ -37,10 +37,10 @@ Basic Linux Commands:
    37. chmod  774 filename.extension --> used to give read,write to own & groups and give only read permission  to others
    38. grep string filename.extension --> to search file or a string in a file
    39. sort filename.extension --> to sort contents alphabetically or numerically
-   40. top --> to collect information about the system
+   40. top --> to collect information about the system cpu
 
 
- Task:
+Solution:
     1.pwd --> to locate the current directory
     2.ls -a --> to list all files also view hidden files
     3.mkdir -p foldername/foldername/foldername/foldername ---> used to create nested folders/directories
