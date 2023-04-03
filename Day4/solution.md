@@ -23,6 +23,34 @@ Task2:
          * It is called a shell script because it combines a sequence of commands.
          
 
+     2. 
+       1. #!/bin/bash is called a "shebang" or "hashbang" line at the beginning of a shell script file. It indicates that the script should be executed by the Bash shell (or any compatible shell) located at /bin/bash on a Unix-like operating system.
+
+       This allows shell scripts to be written in different scripting languages and executed by the appropriate interpreter.
+
+       2.yes. we can write. #!/bin/sh should work on most Unix-based systems, since it refers to the system's default Bourne shell interpreter.
+
+    3. #!/bin/bash
+
+       echo " I will complete the challenges"
+
+    4. #!/bin/bash
+
+       echo "Enter a number"
+       read num
+       echo "The number is $num"
+
+    5. #!/bin/bash
+       echo "Enter the first number"
+       read num1
+       echo "Enter the second number"
+       read num2
+       if[[$num1 -gt $num2]]; then
+          echo "$num1 is greater number"
+       else
+          echo "$num2 is greater number"
+       fi              
+      
 
 
 
