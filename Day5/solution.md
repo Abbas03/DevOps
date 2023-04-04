@@ -1,24 +1,30 @@
 Tasks:
-    1. #!/bin/bash
-       n=90
-       for((i=1; i<=$n; i++));
+1. Creating Directory with three given arguments 
+      #!/bin/bash
+       if [ "$#" -ne 3]
+       then
+        echo "Usage: ./createDirectory.sh <directory_name> <start_number> <end_number>"
+        exit 1
+       fi    
+       dir_name=$1
+       start_num=$2
+       end_num=$3
+       for((i=$start_num; i<=$end_num; i++))
        do
-       mkdir day{$i}
+         mkdir "$dir_name$i"
        done
+       echo "Directories created successfully"  
 
-    2. #!/bin/bash
-       m=50
-       for((i=20; i<=$m; i++))
-       do
-       mkdir movie{$i}
-       done 
+2.Create a Script to backup all your work done till now.       
+      #!/bin/bash
+       source_dir=$1
+       target_dir=$2
+       cur_Date=$(date "+%d-%m-%Y)
+       backup_file=${target_dir}/${cur_Date}.zip
+       echo "backup on ${cur_Date}
+       tar czf $backup_file --absolute-names $source_dir
+       echo "Backup complete successfully"
 
-    3. #!/bin/bash
-       source_dir="/home/onworks/DevOps/*"
-       target_dir="/home/onworks/myBackUp"
-       cur_Date=$(date +"%d-%m-%Y)
-       mkdir $target/cur_date
-       cp -r $source_dir $target_dir/$date
 
     4.
        Cron is a daemon or service that runs in the background of a Unix system and is responsible for executing scheduled commands or scripts. Cron runs continuously and checks a file called crontab for instructions on when and what commands to run.
