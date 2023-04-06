@@ -7,3 +7,6 @@ Learn concepts:
 5. TCP, UDP, FTP,
 6. Network layers
 7. Internet flow architecture
+
+Task: 
+ Install nginx web server in local
